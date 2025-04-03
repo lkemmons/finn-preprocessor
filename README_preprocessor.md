@@ -87,6 +87,9 @@ Alternatively `Download ZIP` button is available at https://github.com/NCAR/finn
 Next, copy your fire detection shapefile(s) into the directory ../finn/preprocessor/data/.
 These files need to be UNZIPPED. 
 
+The "All_countries" shape file (used for assigning global region) can be retrieved from: 
+https://ftp.acom.ucar.edu/user/emmons/FINN_region_shapefiles/ 
+
 ### 4. Building the Docker image
 
 The next step is to build the Docker image. To build the Docker image, execute the following command from the terminal, in the directory where `Dockerfile` exists (this project directory):
@@ -262,7 +265,7 @@ Once you have edited the first cell, you can go ahead and run the code, as you d
 
 NOTE: If running a recent year, the year-specific MODIS LCT and VCF files may not be yet available. This will lead to an error statement in Section 5. If the year-specific data are unavailable, we recommend choosing the most recent year available for your processing. You will have to go back and edit the first cell and restart the kernel. 
 
-NOTE:  [Minimum in struction to use QGIS](https://github.com/yosukefk/finn_preproc/wiki/Minimum-Instruction-for-using-QGIS-with-FINN-preprocessor) available to visualize burned area and raster dataset stored in PostGIS.
+NOTE:  [Minimum instructions to use QGIS](https://github.com/yosukefk/finn_preproc/wiki/Minimum-Instruction-for-using-QGIS-with-FINN-preprocessor) available to visualize burned area and raster dataset stored in PostGIS.
 
 ### 7 What you'd do day-to-day
 
